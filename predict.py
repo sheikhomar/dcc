@@ -2,6 +2,7 @@ import tensorflow as tf
 
 import click
 import numpy as np
+from tqdm import tqdm
 
 
 tf.random.set_seed(123)
@@ -52,20 +53,32 @@ def generate_predictions(model_path: str, dataset_path: str, output_path: str):
     loss, acc = model.evaluate(dataset)
     print(f"final loss {loss}, final acc {acc}")
 
-    # Write file paths to a file
-    with open(output_path + "-file-paths.txt", "w") as fp:
-        for p in dataset.file_paths:
-            fp.write(f"{p}\n")
+    n_classes = len(dataset.class_names)
+    n_samples = len(dataset.file_paths)
+    output_data = np.zeros(shape=(n_samples, n_classes + 2))
 
-    # Make predictions
-    y_proba = model.predict(dataset)
-    print(f"y_prob.shape: {y_proba.shape}")
-    if not output_path.endswith(".npz"):
-        output_path += ".npz"
+    print("Generating predictions...")
+    with tqdm(total=n_samples) as pbar:
+        for i, item in enumerate(dataset.as_numpy_iterator()):
+            x, y = item
+            y_actual = y.argmax(axis=1)[0]
+            
+            # Generate predictions
+            y_preds_logits = model.predict(x)
+
+            # Convert logits to softmax
+            y_preds_exp = np.exp(y_preds_logits.squeeze())
+            y_proba = y_preds_exp / np.sum(y_preds_exp, axis=0) 
+            y_pred = y_proba.argmax(axis=0)
+
+            output_data[i,0] = y_actual
+            output_data[i,1] = y_pred
+            output_data[i,2:] = y_proba
+            pbar.update(1)
 
     # Save predictions
     print(f"Saving predictions to {output_path}")
-    np.savez_compressed(output_path, y_proba=y_proba)
+    np.savez_compressed(output_path, output=output_data)
 
 
 @click.command(help="Generate predictions for a test set.")
