@@ -1,9 +1,10 @@
+import click
+import cv2
+import numpy as np
 import tensorflow as tf
 
-import click
-import numpy as np
 from tqdm import tqdm
-
+from tensorflow.python.keras.preprocessing import dataset_utils
 
 tf.random.set_seed(123)
 
@@ -39,12 +40,14 @@ def generate_predictions(model_path: str, dataset_path: str, output_path: str):
     model.summary()
     model.load_weights(model_path)
 
+    class_names = ["i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x"]
+
     # Load dataset
     dataset: tf.data.Dataset = tf.keras.preprocessing.image_dataset_from_directory(
         dataset_path,
         labels="inferred",
         label_mode="categorical",
-        class_names=["i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x"],
+        class_names=class_names,
         shuffle=False,
         seed=123,
         batch_size=1,
@@ -53,15 +56,30 @@ def generate_predictions(model_path: str, dataset_path: str, output_path: str):
     loss, acc = model.evaluate(dataset)
     print(f"final loss {loss}, final acc {acc}")
 
-    n_classes = len(dataset.class_names)
-    n_samples = len(dataset.file_paths)
+    image_paths, image_labels, _ = dataset_utils.index_directory(
+        directory=dataset_path,
+        labels="inferred",
+        formats=('.bmp', '.gif', '.jpeg', '.jpg', '.png'),
+        class_names=class_names,
+        shuffle=False,
+        seed=123,
+        follow_links=False
+    )
+
+    n_classes = len(class_names)
+    n_samples = len(image_paths)
     output_data = np.zeros(shape=(n_samples, n_classes + 2))
 
     print("Generating predictions...")
     with tqdm(total=n_samples) as pbar:
-        for i, item in enumerate(dataset.as_numpy_iterator()):
-            x, y = item
-            y_actual = y.argmax(axis=1)[0]
+        for i, image_path in enumerate(image_paths):
+            # Load image
+            img = cv2.imread(image_path)
+
+            # Resize image
+            img = np.expand_dims(img, axis=0)
+            x = tf.image.resize(img, size=(32, 32))
+            y_actual = image_labels[i]
             
             # Generate predictions
             y_preds_logits = model.predict(x)
@@ -76,9 +94,18 @@ def generate_predictions(model_path: str, dataset_path: str, output_path: str):
             output_data[i,2:] = y_proba
             pbar.update(1)
 
+    if not output_path.endswith(".npz"):
+        output_path += ".npz"
+
     # Save predictions
     print(f"Saving predictions to {output_path}")
     np.savez_compressed(output_path, output=output_data)
+
+    names_path = output_path + "-image-paths.txt"
+    print(f"Writing image paths to {names_path}")
+    with open(names_path, "w") as fp:
+        for image_path in image_paths:
+            fp.write(f"{image_path}\n")
 
 
 @click.command(help="Generate predictions for a test set.")
