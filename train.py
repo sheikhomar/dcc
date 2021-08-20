@@ -90,7 +90,7 @@ if __name__ == "__main__":
         callbacks=[checkpoint],
     )
 
-    model.load_weights("best_model")
+    model.load_weights("checkpoints/best_model")
 
     loss, acc = model.evaluate(valid)
     print(f"final loss {loss}, final acc {acc}")
