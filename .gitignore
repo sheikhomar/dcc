@@ -147,3 +147,4 @@ cython_debug/
 /checkpoints
 /config/secrets/*.json
 notebooks/dask-worker-space/*
+/predictions
