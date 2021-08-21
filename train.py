@@ -3,7 +3,10 @@ from tensorflow import keras
 import numpy as np
 import json
 import sys
+import os
+from pathlib import Path
 
+import click
 
 user_data = 'data'
 test_data = 'label_book'
@@ -11,9 +14,9 @@ batch_size = 8
 tf.random.set_seed(123)
 
 
-if __name__ == "__main__":
-    train = tf.keras.preprocessing.image_dataset_from_directory(
-        user_data + '/train',
+def train(experiment_dir: str):
+    train_set = tf.keras.preprocessing.image_dataset_from_directory(
+        os.path.join(experiment_dir, 'data', 'train'),
         labels="inferred",
         label_mode="categorical",
         class_names=["i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x"],
@@ -24,7 +27,7 @@ if __name__ == "__main__":
     )
 
     valid = tf.keras.preprocessing.image_dataset_from_directory(
-        user_data + '/val',
+        os.path.join(experiment_dir, 'data', 'val'),
         labels="inferred",
         label_mode="categorical",
         class_names=["i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x"],
@@ -34,13 +37,13 @@ if __name__ == "__main__":
         image_size=(32, 32),
     )
 
-    total_length = ((train.cardinality() + valid.cardinality()) * batch_size).numpy()
+    total_length = ((train_set.cardinality() + valid.cardinality()) * batch_size).numpy()
     if total_length > 10_000:
         print(f"Dataset size larger than 10,000. Got {total_length} examples")
         sys.exit()
 
     test = tf.keras.preprocessing.image_dataset_from_directory(
-        test_data,
+        os.path.join(experiment_dir, 'data', 'test'),
         labels="inferred",
         label_mode="categorical",
         class_names=["i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x"],
@@ -75,8 +78,11 @@ if __name__ == "__main__":
     loss_0, acc_0 = model.evaluate(valid)
     print(f"loss {loss_0}, acc {acc_0}")
 
+    best_model_path = Path(experiment_dir) / 'checkpoints' / 'best_model'
+    best_model_path.parent.mkdir(exist_ok=True, parents=True)
+
     checkpoint = tf.keras.callbacks.ModelCheckpoint(
-        "checkpoints/best_model",
+        best_model_path,
         monitor="val_accuracy",
         mode="max",
         save_best_only=True,
@@ -84,13 +90,13 @@ if __name__ == "__main__":
     )
 
     history = model.fit(
-        train,
+        train_set,
         validation_data=valid,
         epochs=100,
         callbacks=[checkpoint],
     )
 
-    model.load_weights("checkpoints/best_model")
+    model.load_weights(best_model_path)
 
     loss, acc = model.evaluate(valid)
     print(f"final loss {loss}, final acc {acc}")
@@ -106,5 +112,27 @@ if __name__ == "__main__":
     y_classes = y_prob.argmax(axis=1)
     print(y_classes)
 
-    with open('predictions.json', 'w') as outfile:
+    predictions_path = Path(experiment_dir) / 'predictions' / 'predictions.json'
+    predictions_path.parent.mkdir(parents=True, exist_ok=True)
+    
+    with open(predictions_path, 'w') as outfile:
         json.dump(y_classes.tolist(), outfile)
+
+
+@click.command(help="Train a model.")
+@click.option(
+    "-e",
+    "--experiment-dir",
+    type=click.STRING,
+    required=True,
+    help="Path to the experiment."
+)
+def main(experiment_dir: str):
+    train(
+        experiment_dir=experiment_dir,
+    )
+    pass
+
+
+if __name__ == "__main__":
+    main()  # pylint: disable=no-value-for-parameter
