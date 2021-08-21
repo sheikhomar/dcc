@@ -6,6 +6,8 @@ import sys
 import os
 from pathlib import Path
 
+from predict import create_prediction_files
+
 import click
 
 user_data = 'data'
@@ -42,8 +44,9 @@ def train(experiment_dir: str):
         print(f"Dataset size larger than 10,000. Got {total_length} examples")
         sys.exit()
 
+    test_set_path = os.path.join(experiment_dir, 'data', 'test')
     test = tf.keras.preprocessing.image_dataset_from_directory(
-        os.path.join(experiment_dir, 'data', 'test'),
+        test_set_path,
         labels="inferred",
         label_mode="categorical",
         class_names=["i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x"],
@@ -104,19 +107,13 @@ def train(experiment_dir: str):
     test_loss, test_acc = model.evaluate(test)
     print(f"test loss {test_loss}, test acc {test_acc}")
 
-    x = []
-    for element in test.unbatch():
-        x.append(element[0])
-
-    y_prob = model.predict(np.array(x))
-    y_classes = y_prob.argmax(axis=1)
-    print(y_classes)
-
-    predictions_path = Path(experiment_dir) / 'predictions' / 'predictions.json'
+    predictions_path = Path(experiment_dir) / 'predictions' / 'predictions'
     predictions_path.parent.mkdir(parents=True, exist_ok=True)
-    
-    with open(predictions_path, 'w') as outfile:
-        json.dump(y_classes.tolist(), outfile)
+    create_prediction_files(
+        model=model,
+        dataset_path=test_set_path,
+        output_path=str(predictions_path),
+    )
 
 
 @click.command(help="Train a model.")
