@@ -148,3 +148,4 @@ cython_debug/
 /config/secrets/*.json
 notebooks/dask-worker-space/*
 /predictions
+.DS_Store
