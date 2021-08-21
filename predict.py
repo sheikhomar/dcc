@@ -36,8 +36,8 @@ def create_model():
     return model
 
 
-def create_prediction_files(model, dataset_path: str, output_path: str):
-    image_paths, image_labels, _ = dataset_utils.index_directory(
+def load_images(dataset_path: str):
+    image_paths, image_labels, class_names = dataset_utils.index_directory(
         directory=dataset_path,
         labels="inferred",
         formats=('.bmp', '.gif', '.jpeg', '.jpg', '.png'),
@@ -46,6 +46,11 @@ def create_prediction_files(model, dataset_path: str, output_path: str):
         seed=123,
         follow_links=False
     )
+    return image_paths, image_labels, class_names
+
+
+def create_prediction_files(model, dataset_path: str, output_path: str):
+    image_paths, image_labels, _ = load_images(dataset_path)
 
     n_classes = len(CLASS_NAMES)
     n_samples = len(image_paths)
