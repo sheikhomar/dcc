@@ -8,6 +8,8 @@ from tensorflow.python.keras.preprocessing import dataset_utils
 
 tf.random.set_seed(123)
 
+CLASS_NAMES = ["i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x"]
+
 
 def create_model():
     base_model = tf.keras.applications.ResNet50(
@@ -34,39 +36,18 @@ def create_model():
     return model
 
 
-def generate_predictions(model_path: str, dataset_path: str, output_path: str):
-    # Load model
-    model = create_model()
-    model.summary()
-    model.load_weights(model_path)
-
-    class_names = ["i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x"]
-
-    # Load dataset
-    dataset: tf.data.Dataset = tf.keras.preprocessing.image_dataset_from_directory(
-        dataset_path,
-        labels="inferred",
-        label_mode="categorical",
-        class_names=class_names,
-        shuffle=False,
-        seed=123,
-        batch_size=1,
-        image_size=(32, 32),
-    )
-    loss, acc = model.evaluate(dataset)
-    print(f"final loss {loss}, final acc {acc}")
-
+def create_prediction_files(model, dataset_path: str, output_path: str):
     image_paths, image_labels, _ = dataset_utils.index_directory(
         directory=dataset_path,
         labels="inferred",
         formats=('.bmp', '.gif', '.jpeg', '.jpg', '.png'),
-        class_names=class_names,
+        class_names=CLASS_NAMES,
         shuffle=False,
         seed=123,
         follow_links=False
     )
 
-    n_classes = len(class_names)
+    n_classes = len(CLASS_NAMES)
     n_samples = len(image_paths)
     output_data = np.zeros(shape=(n_samples, n_classes + 2))
 
@@ -108,6 +89,29 @@ def generate_predictions(model_path: str, dataset_path: str, output_path: str):
             fp.write(f"{image_path}\n")
 
 
+def predict(model_path: str, dataset_path: str, output_path: str):
+    # Load model
+    model = create_model()
+    model.summary()
+    model.load_weights(model_path)
+
+    # Load dataset
+    dataset: tf.data.Dataset = tf.keras.preprocessing.image_dataset_from_directory(
+        dataset_path,
+        labels="inferred",
+        label_mode="categorical",
+        class_names=CLASS_NAMES,
+        shuffle=False,
+        seed=123,
+        batch_size=1,
+        image_size=(32, 32),
+    )
+    loss, acc = model.evaluate(dataset)
+    print(f"final loss {loss}, final acc {acc}")
+
+    create_prediction_files(model=model, dataset_path=dataset_path, output_path=output_path)
+
+
 @click.command(help="Generate predictions for a test set.")
 @click.option(
     "-m",
@@ -131,10 +135,10 @@ def generate_predictions(model_path: str, dataset_path: str, output_path: str):
     help=""
 )
 def main(model_path: str, dataset_path: str, output_path: str):
-    generate_predictions(
+    predict(
         model_path=model_path,
         dataset_path=dataset_path,
-        output_path=output_path
+        output_path=output_path,
     )
 
 if __name__ == "__main__":
