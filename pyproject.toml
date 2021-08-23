@@ -15,6 +15,7 @@ click = "^8.0.1"
 tqdm = "^4.62.1"
 ipywidgets = "^7.6.3"
 jupyterlab-widgets = "^1.0.0"
+cleanlab = "^1.0"
 
 [tool.poetry.dev-dependencies]
 
