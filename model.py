@@ -1,23 +1,16 @@
-from pathlib import Path
 from typing import List, Optional
-from pprint import pprint
 
 import numpy as np
-from numpy import random
 import tensorflow as tf
-from sklearn.base import BaseEstimator
-
 import cv2
 
 from tqdm import tqdm
-from tensorflow.python.keras.preprocessing import dataset_utils
+from sklearn.base import BaseEstimator
 from tensorflow.python.keras.preprocessing.image_dataset import paths_and_labels_to_dataset
-
-import utils
 
 
 class DataCentricClassifier(BaseEstimator):
-    def __init__(self, model_path: str, image_paths: List[str], image_labels: np.ndarray, class_names: List[str], epoch: int = 100, batch_size: int=8, random_seed: Optional[int]=123) -> None:
+    def __init__(self, image_paths: List[str], image_labels: np.ndarray, class_names: List[str], epoch: int = 100, batch_size: int=8, random_seed: Optional[int]=None, model_path: str=None) -> None:
         super().__init__()
         self._batch_size = batch_size
         self._random_seed = random_seed
@@ -31,9 +24,13 @@ class DataCentricClassifier(BaseEstimator):
             np.random.seed(random_seed)
             tf.random.set_seed(random_seed)
 
-    def load_weights(self):
-        print(f"Loading weights from {self._model_path}")
-        self._model.load_weights(str(self._model_path))
+    def reset_weights(self):
+        if self._model_path is not None:
+            print(f"Loading weights from {self._model_path}...")
+            self._model.load_weights(str(self._model_path))
+        else:
+            print(f"Recreating model...")
+            self._model = self._create_model()
 
     def fit(self, train_idx, train_labels=None):
         train_set = self._get_dataset(shuffle=True, selected_indices=train_idx)
