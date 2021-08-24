@@ -17,45 +17,35 @@ import utils
 
 
 class DataCentricClassifier(BaseEstimator):
-    def __init__(self, experiment_dir: str, epoch: int = 100, batch_size: int=8, random_seed: Optional[int]=123) -> None:
+    def __init__(self, model_path: str, image_paths: List[str], image_labels: np.ndarray, class_names: List[str], epoch: int = 100, batch_size: int=8, random_seed: Optional[int]=123) -> None:
         super().__init__()
-        self._experiment_dir = Path(experiment_dir)
         self._batch_size = batch_size
         self._random_seed = random_seed
         self._epoch = epoch
         self._model = self._create_model()
-        self._dataset_paths = self._load_dataset_paths(["train", "val", "test"])
+        self._model_path = model_path
+        self._image_paths = image_paths
+        self._image_labels = image_labels
+        self._class_names = class_names
         if random_seed is not None:
             np.random.seed(random_seed)
             tf.random.set_seed(random_seed)
 
-
     def load_weights(self):
-        best_model_path = self._experiment_dir / 'checkpoints' / 'best_model'
-        print(f"Loading weights from {best_model_path}")
-        self._model.load_weights(str(best_model_path))
+        print(f"Loading weights from {self._model_path}")
+        self._model.load_weights(str(self._model_path))
 
-    def fit(self, train_idx, train_labels=None, sample_weight=None, loader='train'):
-        train_set = self._get_dataset(dir_name=loader, shuffle=True, selected_indices=train_idx)
-        # valid_set = self._get_dataset(dir_name="val", shuffle=True)
-        self._model.fit(
-            train_set,
-            # validation_data=valid_set,
-            epochs=self._epoch,
-        )
+    def fit(self, train_idx, train_labels=None):
+        train_set = self._get_dataset(shuffle=True, selected_indices=train_idx)
+        self._model.fit(train_set, epochs=self._epoch)
 
-    def predict(self, idx=None, loader=None):
+    def predict(self, idx=None):
         """Get predicted labels from trained model."""
-        probs = self.predict_proba(idx, loader)
+        probs = self.predict_proba(idx)
         return probs.argmax(axis=1)
 
-    def predict_proba(self, idx=None, loader=None):
-        if loader is None:
-            loader = "test"
-
-        print(f"Generating predictions on {loader}")
-
-        img_paths, img_labels, classes = self._dataset_paths[loader]
+    def predict_proba(self, idx=None):
+        img_paths, img_labels, classes = self._image_paths, self._image_labels, self._class_names
         if idx is not None:
             img_paths = np.array(img_paths)[idx].tolist()
             img_labels = np.array(img_labels)[idx].tolist()
@@ -83,39 +73,9 @@ class DataCentricClassifier(BaseEstimator):
                 preds[i] = y_proba
                 pbar.update(1)
         return preds
-    
-    def get_dataset_paths_and_labels(self, dir_name: str):
-        img_paths, img_labels, classes = self._dataset_paths[dir_name]
-        return img_paths, img_labels
 
-    def _load_dataset_paths(self, dir_names: List[str]):
-        paths_map = dict()
-        for dir_name in dir_names:
-            dataset_dir = self._experiment_dir / "data" / dir_name
-            if not dataset_dir.exists():
-                raise Exception(f"Dataset directory {dataset_dir} does not exist.")
-            print(f"Loading paths from {dataset_dir}")
-
-            should_shuffle = dir_name in ["train"]
-            img_paths, img_labels, classes = utils.get_image_paths_and_labels(dataset_dir, should_shuffle, self._random_seed)
-            paths_map[dir_name] = (img_paths, img_labels, classes)
-        return paths_map
-
-    def _create_checkpoint_callback(self):
-        best_model_path = Path(self._experiment_dir) / 'checkpoints' / 'best_model'
-        best_model_path.parent.mkdir(exist_ok=True, parents=True)
-
-        checkpoint = tf.keras.callbacks.ModelCheckpoint(
-            best_model_path,
-            monitor="val_accuracy",
-            mode="max",
-            save_best_only=True,
-            save_weights_only=True,
-        )
-        return checkpoint
-
-    def _get_dataset(self, dir_name: str, shuffle: bool, selected_indices: Optional[np.ndarray]=None):
-        img_paths, img_labels, classes = self._dataset_paths[dir_name]
+    def _get_dataset(self, shuffle: bool, selected_indices: Optional[np.ndarray]=None):
+        img_paths, img_labels, classes = self._image_paths, self._image_labels, self._class_names
 
         if selected_indices is not None:
             img_paths = np.array(img_paths)[selected_indices].tolist()
