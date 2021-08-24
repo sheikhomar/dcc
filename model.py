@@ -121,20 +121,12 @@ class DataCentricClassifier(BaseEstimator):
             img_paths = np.array(img_paths)[selected_indices].tolist()
             img_labels = np.array(img_labels)[selected_indices].tolist()
             print(f"Filtered dataset size: {len(img_paths)}")
-            print("Before shuffling: ")
-            pprint(img_paths[:5])
-            pprint(img_labels[:5])
         
         if shuffle:
             shuffle_indices = np.arange(len(img_paths))
             np.random.shuffle(shuffle_indices)
             img_paths = np.array(img_paths)[shuffle_indices].tolist()
             img_labels = np.array(img_labels)[shuffle_indices].tolist()
-
-            print("After shuffling: ")
-            pprint(img_paths[:5])
-            pprint(img_labels[:5])
-
 
         dataset = paths_and_labels_to_dataset(
             image_paths=img_paths,
