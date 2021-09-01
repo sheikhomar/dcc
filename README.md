@@ -1,5 +1,13 @@
 # Data-Centric AI Competition
 
+## Getting Started
+
+Perform augmentation:
+
+```bash
+poetry run python -m augment -s experiments/original -t experiments/manual-clean-aug-quant -n 0.95
+```
+
 ## Ideas
 
 - Find and eliminate duplicate images.
