@@ -59,8 +59,13 @@ def generate_augmented_images(source_dir: Path, target_dir: Path, class_name: st
                 aug_img_name = f"{destination_path.stem}-aug-{i}.png"
                 aug_img_path = destination_path.parent / aug_img_name
 
-                # Save augmented image            
                 aug_img = np.squeeze(batch, axis=0)
+
+                # Quantize image
+                aug_img = (aug_img // 43) * 43
+                aug_img[aug_img > 43] = 255
+
+                # Save augmented image
                 cv2.imwrite(str(aug_img_path), aug_img)
 
                 pbar.update(1)
