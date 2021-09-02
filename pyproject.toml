@@ -17,6 +17,7 @@ ipywidgets = "^7.6.3"
 jupyterlab-widgets = "^1.0.0"
 cleanlab = "^1.0"
 umap-learn = "^0.5.1"
+jupyter-dash = "^0.4.0"
 
 [tool.poetry.dev-dependencies]
 
