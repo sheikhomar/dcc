@@ -28,7 +28,7 @@ def check_source_dirs(source_root_dir: Path):
             raise Exception("Source path does not exist")
 
 
-def generate_augmented_images(source_dir: Path, target_dir: Path, class_name: str, n_target: int):
+def generate_augmented_images(source_dir: Path, target_dir: Path, class_name: str, n_target: int, quantize: bool):
     image_paths = list((source_dir / class_name).glob("*.png"))
     n_augmentations = int(n_target / len(image_paths))
     
@@ -38,7 +38,7 @@ def generate_augmented_images(source_dir: Path, target_dir: Path, class_name: st
         rotation_range=20,
     )
 
-    print(f"Generating augmentations for {class_name} in {source_dir}")
+    print(f"Generating augmentations for {class_name} in {source_dir} (quantize? {'yes' if quantize else 'no'})")
     with tqdm(total=n_target) as pbar:
         for image_path in image_paths:
             # Build destination file path
@@ -61,9 +61,10 @@ def generate_augmented_images(source_dir: Path, target_dir: Path, class_name: st
 
                 aug_img = np.squeeze(batch, axis=0)
 
-                # Quantize image
-                aug_img = (aug_img // 43) * 43
-                aug_img[aug_img > 43] = 255
+                if quantize:
+                    # Quantize image
+                    aug_img = (aug_img // 43) * 43
+                    aug_img[aug_img > 43] = 255
 
                 # Save augmented image
                 cv2.imwrite(str(aug_img_path), aug_img)
@@ -74,7 +75,7 @@ def generate_augmented_images(source_dir: Path, target_dir: Path, class_name: st
                     break
 
 
-def augment(source_experiment_dir: str, target_experiment_dir: str, train_fraction: float):
+def augment(source_experiment_dir: str, target_experiment_dir: str, train_fraction: float, quantize: bool):
     source_dir = Path(source_experiment_dir)
     target_dir = Path(target_experiment_dir)
 
@@ -88,19 +89,22 @@ def augment(source_experiment_dir: str, target_experiment_dir: str, train_fracti
             source_dir=source_dir / "data" / "train",
             target_dir=target_dir / "data" / "train",
             class_name=class_name,
-            n_target=int(train_set_size / len(CLASS_NAMES))
+            n_target=int(train_set_size / len(CLASS_NAMES)),
+            quantize=quantize,
         )
         generate_augmented_images(
             source_dir=source_dir / "data" / "val",
             target_dir=target_dir / "data" / "val",
             class_name=class_name,
-            n_target=int(val_set_size / len(CLASS_NAMES))
+            n_target=int(val_set_size / len(CLASS_NAMES)),
+            quantize=quantize,
         )
         generate_augmented_images(
             source_dir=source_dir / "data" / "test",
             target_dir=target_dir / "data" / "test",
             class_name=class_name,
-            n_target=int(50)
+            n_target=int(50),
+            quantize=quantize,
         )
 
 
@@ -127,11 +131,18 @@ def augment(source_experiment_dir: str, target_experiment_dir: str, train_fracti
     show_default=True,
     help="The size of the training set."
 )
-def main(source_experiment_dir: str, target_experiment_dir: str, train_fraction: float):
+@click.option(
+    "-q",
+    "--quantize/--no-quantize",
+    required=True,
+    help="Whether to quantize augmented images."
+)
+def main(source_experiment_dir: str, target_experiment_dir: str, train_fraction: float, quantize: bool):
     augment(
         source_experiment_dir=source_experiment_dir,
         target_experiment_dir=target_experiment_dir,
         train_fraction=train_fraction,
+        quantize=quantize,
     )
 
 
