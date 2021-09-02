@@ -11,13 +11,14 @@ scikit-learn = "^0.24.2"
 tensorflow = "2.5.0"
 opencv-python = "^4.5.2"
 jupyterlab = "^3.0.16"
-click = "^8.0.1"
+click = "^7"
 tqdm = "^4.62.1"
 ipywidgets = "^7.6.3"
 jupyterlab-widgets = "^1.0.0"
 cleanlab = "^1.0"
 umap-learn = "^0.5.1"
 jupyter-dash = "^0.4.0"
+streamlit = "^0.87.0"
 
 [tool.poetry.dev-dependencies]
 
