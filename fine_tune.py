@@ -77,11 +77,15 @@ def train(experiment_dir: str):
         metrics=["accuracy"],
     )
     model.summary()
-    loss_0, acc_0 = model.evaluate(valid)
-    print(f"loss {loss_0}, acc {acc_0}")
 
     best_model_path = Path(experiment_dir) / 'checkpoints' / 'imagenet-finetuned'
     best_model_path.parent.mkdir(exist_ok=True, parents=True)
+    if os.path.exists(f"{best_model_path}.index"):
+        print(f"Loading model weights from {best_model_path}")
+        model.load_weights(str(best_model_path))
+
+    loss_0, acc_0 = model.evaluate(valid)
+    print(f"loss {loss_0}, acc {acc_0}")   
 
     checkpoint = tf.keras.callbacks.ModelCheckpoint(
         best_model_path,
