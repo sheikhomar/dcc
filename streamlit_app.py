@@ -180,6 +180,14 @@ class StreamlitApp:
         return st.session_state["current_image_index"]
 
     @property
+    def possible_tags(self) -> List[str]:
+        if "possible_tags" not in st.session_state:
+            file_path = os.path.join(self._experiment_dir, "possible-tags.txt")
+            with open(file_path, "r") as file:
+                st.session_state["possible_tags"] = file.readlines()
+        return st.session_state["possible_tags"]
+
+    @property
     def current_image_path(self) -> Path:
         index = self.current_image_index - 1
         image_path = self.filtered_image_paths[index]
@@ -255,7 +263,7 @@ class StreamlitApp:
         )
 
     def _render_tags_container(self) -> None:
-        possible_tags = ["artifacts", "bent", "grid", "noise", "disconnected", "dots"]
+        possible_tags = self.possible_tags
         image_meta = self.current_image_meta
         
         st.markdown("## Tags")

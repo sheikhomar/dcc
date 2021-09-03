@@ -1,0 +1,7 @@
+artifacts
+bent
+grid
+noise
+disconnected
+dots
+creative
