@@ -22,13 +22,17 @@
       "full_path": "experiments/original/data/val/i/b1725dec-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "bent"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/i/b17352ce-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "bent"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/i/b1742816-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -58,7 +62,10 @@
       "full_path": "experiments/original/data/val/i/b177400a-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "dots",
+        "creative"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/i/b178641c-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -70,13 +77,17 @@
       "full_path": "experiments/original/data/val/i/b1794b20-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/i/b179f390-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/i/b17af470-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -94,7 +105,9 @@
       "full_path": "experiments/original/data/val/i/b17c40b4-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/i/b17cd2fe-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -111,7 +124,7 @@
     {
       "full_path": "experiments/original/data/val/i/b17e949a-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
+      "new_label": "ii",
       "tags": []
     },
     {
@@ -130,7 +143,9 @@
       "full_path": "experiments/original/data/val/i/b1809588-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/i/b181282c-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -154,13 +169,17 @@
       "full_path": "experiments/original/data/val/i/b1837bfe-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/i/b18436ac-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "grid"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/i/b1850ba4-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -172,13 +191,17 @@
       "full_path": "experiments/original/data/val/i/b185f76c-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/i/b186ca2a-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "creative"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/i/b1878514-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -238,7 +261,9 @@
       "full_path": "experiments/original/data/val/i/b18f596a-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "creative"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/i/b1905568-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -340,19 +365,25 @@
       "full_path": "experiments/original/data/val/i/b19ff702-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/i/b1a08a00-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "artifact-egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/i/b1a150f2-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "bent"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/i/b1a29174-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -370,13 +401,17 @@
       "full_path": "experiments/original/data/val/i/b1a41774-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "creative"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/i/b1a4b210-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "creative"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/i/b1a5630e-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -388,7 +423,9 @@
       "full_path": "experiments/original/data/val/i/b1a66e16-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "bent"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/i/b1a71b2c-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -400,7 +437,9 @@
       "full_path": "experiments/original/data/val/i/b1a7c54a-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "bent"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/i/b1a93a42-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -424,7 +463,9 @@
       "full_path": "experiments/original/data/val/i/b1ab8d60-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "creative"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/i/b1ac72d4-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -484,7 +525,9 @@
       "full_path": "experiments/original/data/val/i/b1b31c10-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "creative"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/i/b1b3aea0-ce5d-11eb-b317-38f9d35ea60f.png",
