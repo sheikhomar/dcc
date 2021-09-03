@@ -34,7 +34,9 @@
       "full_path": "experiments/original/data/val/iii/b342e498-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "iii",
       "new_label": "iii",
-      "tags": []
+      "tags": [
+        "bent"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/iii/b3437f02-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -46,13 +48,17 @@
       "full_path": "experiments/original/data/val/iii/b3441f16-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "iii",
       "new_label": "iii",
-      "tags": []
+      "tags": [
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/iii/b344bee4-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "iii",
       "new_label": "iii",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/iii/b34557f0-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -100,7 +106,9 @@
       "full_path": "experiments/original/data/val/iii/b34b2112-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "iii",
       "new_label": "iii",
-      "tags": []
+      "tags": [
+        "noise"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/iii/b34cc864-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -118,12 +126,14 @@
       "full_path": "experiments/original/data/val/iii/b34e5ea4-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "iii",
       "new_label": "iii",
-      "tags": []
+      "tags": [
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/iii/b34f0520-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "iii",
-      "new_label": "iii",
+      "new_label": "unsure",
       "tags": []
     },
     {
@@ -207,7 +217,7 @@
     {
       "full_path": "experiments/original/data/val/iii/b35a485e-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "iii",
-      "new_label": "iii",
+      "new_label": "unsure",
       "tags": []
     },
     {
@@ -237,7 +247,7 @@
     {
       "full_path": "experiments/original/data/val/iii/b35f78b0-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "iii",
-      "new_label": "iii",
+      "new_label": "unsure",
       "tags": []
     },
     {
@@ -279,7 +289,7 @@
     {
       "full_path": "experiments/original/data/val/iii/b369ec3c-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "iii",
-      "new_label": "iii",
+      "new_label": "unsure",
       "tags": []
     },
     {
@@ -316,7 +326,11 @@
       "full_path": "experiments/original/data/val/iii/b3711048-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "iii",
       "new_label": "iii",
-      "tags": []
+      "tags": [
+        "multiline",
+        "noise",
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/iii/b372aa02-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -345,7 +359,7 @@
     {
       "full_path": "experiments/original/data/val/iii/b3776f9c-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "iii",
-      "new_label": "iii",
+      "new_label": "unsure",
       "tags": []
     },
     {
@@ -417,7 +431,7 @@
     {
       "full_path": "experiments/original/data/val/iii/b3860df4-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "iii",
-      "new_label": "iii",
+      "new_label": "unsure",
       "tags": []
     },
     {
