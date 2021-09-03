@@ -1,0 +1,532 @@
+{
+  "images": [
+    {
+      "full_path": "experiments/original/data/val/vii/b1b4a3be-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1b63602-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1b6fae2-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1b7fc76-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1b8ad2e-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1b94a86-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": [
+        "confusing"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1b9e8d8-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1ba9fb2-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1bb5164-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1bbd8c8-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1bc6fe0-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": [
+        "bent",
+        "egde"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1bd4c44-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": [
+        "noise"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1bdf694-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "unsure",
+      "tags": [
+        "confusing"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1be829e-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": [
+        "confusing"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1bf0ade-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1bf9710-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": [
+        "creative"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1c02ed2-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1c15ee2-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1c21a94-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": [
+        "confusing"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1c2c07a-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1c36656-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1c40f34-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1c4d02c-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": [
+        "disconnected"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1c5b87a-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "unsure",
+      "tags": [
+        "confusing"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1c6569a-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": [
+        "artifacts"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1c74096-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1c80c10-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": [
+        "confusing"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1c8a990-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": [
+        "confusing"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1c94378-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": [
+        "confusing",
+        "noise"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1ca21e4-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": [
+        "confusing"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1cafca4-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1cb876e-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1cc3a7e-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1ccd2a4-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1cd61e2-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "unsure",
+      "tags": [
+        "confusing"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1ce093a-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": [
+        "bent"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1cec9e2-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": [
+        "disconnected"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1d001cc-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": [
+        "disconnected"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1d0b888-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1d16490-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1d200e4-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1d290ea-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": [
+        "confusing"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1d334be-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1d3e698-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1d54ee8-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": [
+        "confusing"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1d7b26e-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "unsure",
+      "tags": [
+        "confusing"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1d903c6-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1d9e9f8-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "invalid",
+      "tags": [
+        "confusing"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1da70bc-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1db8a74-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": [
+        "confusing"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1dc2786-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1dcbf2a-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "unsure",
+      "tags": [
+        "confusing"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1dd47ba-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1dde3fa-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1de905c-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": [
+        "confusing"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1df2fee-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1dfd34a-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": [
+        "confusing"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1e07b74-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1e115d4-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": [
+        "confusing"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1e199c8-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": [
+        "confusing"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1e23fe0-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": [
+        "confusing"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1e2dbb2-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1e3f4d4-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": [
+        "confusing"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1e59fb4-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1e68e42-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1e73662-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": [
+        "multiline"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1e7e83c-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": [
+        "confusing"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1e93408-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1e9e34e-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1eac0f2-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1eb6a16-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1ebfc74-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1ec88a6-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1ed1fe6-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1edb7bc-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1eeb05e-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/vii/b1ef5e50-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "vii",
+      "new_label": "vii",
+      "tags": []
+    }
+  ]
+}
