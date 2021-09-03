@@ -22,19 +22,27 @@
       "full_path": "experiments/original/data/train/i/aba4001e-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "artifacts",
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/aba4a622-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "artifacts",
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/aba96072-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/abaae12c-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -52,13 +60,17 @@
       "full_path": "experiments/original/data/train/i/abac5714-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/abad35f8-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/abadf178-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -88,25 +100,34 @@
       "full_path": "experiments/original/data/train/i/abb4beb8-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "grid"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/abb5ba7a-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/abb66614-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "bent"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/abb6ed82-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "bent",
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/abb7ae02-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -118,25 +139,33 @@
       "full_path": "experiments/original/data/train/i/abb85924-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "grid"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/abb8e704-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/abba3e7e-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/abbbabf6-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/abbc6bae-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -172,7 +201,9 @@
       "full_path": "experiments/original/data/train/i/abc11f28-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/abc218ec-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -184,19 +215,25 @@
       "full_path": "experiments/original/data/train/i/abc2c5e4-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/abc34dde-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/abc42e20-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/abc4fbd4-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -208,25 +245,34 @@
       "full_path": "experiments/original/data/train/i/abc5a782-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/abc62d74-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "grid"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/abc6b9f6-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/abc8040a-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "dots",
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/abcc1bda-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -262,13 +308,17 @@
       "full_path": "experiments/original/data/train/i/abd23c86-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/abd50a24-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/abd61018-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -292,7 +342,9 @@
       "full_path": "experiments/original/data/train/i/abdd7b3c-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/abde370c-ce5d-11eb-b317-38f9d35ea60f.png",
