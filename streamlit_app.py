@@ -250,6 +250,11 @@ class StreamlitApp:
         img = cv2.imread(str(image_path), cv2.IMREAD_GRAYSCALE)
         col1.image(img, use_column_width=False)
 
+        new_size = (32,32)
+        resized_img = load_image(str(image_path), image_size=new_size, num_channels=3, interpolation="bilinear")
+        resized_img = cv2.cvtColor(resized_img.numpy(), cv2.COLOR_BGR2GRAY)
+        col1.image(resized_img, use_column_width=False, clamp=True, output_format="png")
+
         col1.text(image_path.name)
 
         col2.header("Label")
