@@ -18,17 +18,12 @@ import umap
 from tensorflow.python.keras.preprocessing.image_dataset import load_image
 from tqdm import tqdm
 import streamlit as st
-from matplotlib import pyplot as plt
-from IPython.display import display, HTML
-from sklearn.cluster import KMeans, Birch
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import ConfusionMatrixDisplay
 from sklearn.ensemble import IsolationForest
-from sklearn.neighbors import LocalOutlierFactor
 from sklearn.covariance import EllipticEnvelope
 from sklearn.svm import OneClassSVM
 from sklearn.cluster import DBSCAN
 from sklearn.decomposition import PCA
+from streamlit_tags import st_tags, st_tags_sidebar
 
 import utils
 
@@ -166,6 +161,7 @@ class StreamlitApp:
             st.write(f"Found {self.n_images} images")
             self._render_image_selectors()
             self._render_selected_image()
+            self._render_tags_container()
 
     @property
     def n_images(self) -> int:
@@ -214,6 +210,10 @@ class StreamlitApp:
         meta_data: MetaData = st.session_state["meta_data"]
         return meta_data
 
+    @property
+    def current_image_meta(self) -> MetaDataItem:
+        return self.meta_data.get(self.current_image_path)
+
     def _go_next_image(self) -> None:
         new_val = self.current_image_index + 1
         max_val = self.n_images
@@ -254,6 +254,31 @@ class StreamlitApp:
             on_change=lambda: self._on_label_change(),
         )
 
+    def _render_tags_container(self) -> None:
+        possible_tags = ["artifacts", "bent", "grid", "noise", "disconnected", "dots"]
+        image_meta = self.current_image_meta
+        
+        st.markdown("## Tags")
+        st.multiselect(
+            label="Assignments for current image",
+            options=possible_tags,
+            default=image_meta.tags,
+            key="selected_tags",
+            on_change=lambda: self._update_current_image_tags()
+        )
+        st_tags(
+            label='### All possible tags',
+            text='Press enter to add more',
+            value=possible_tags,
+            suggestions=[],
+            maxtags=-1,
+            key="possible_tags"
+        )
+
+    def _update_current_image_tags(self) -> None:
+        self.current_image_meta.tags = st.session_state["selected_tags"]
+        self.meta_data.to_csv(self.meta_data_file_path)
+
     def _on_label_change(self) -> None:
         new_label = st.session_state["radio_val_selected_image_label"]
         self._set_current_image_label(new_label)
@@ -283,7 +308,6 @@ class StreamlitApp:
         item = meta_data.get(self.current_image_path)
         item.set_new_label(new_label)
         meta_data.to_csv(self.meta_data_file_path)
-
 
     def _build_source_experiment_dropbox(self) -> None:
         source_experiments = os.listdir(self._experiment_dir)

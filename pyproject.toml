@@ -19,6 +19,7 @@ cleanlab = "^1.0"
 umap-learn = "^0.5.1"
 jupyter-dash = "^0.4.0"
 streamlit = "^0.87.0"
+streamlit-tags = "^1.2.8"
 
 [tool.poetry.dev-dependencies]
 

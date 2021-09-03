@@ -1498,6 +1498,17 @@ validators = "*"
 watchdog = {version = "*", markers = "platform_system != \"Darwin\""}
 
 [[package]]
+name = "streamlit-tags"
+version = "1.2.8"
+description = "Tags custom component for Streamlit"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+streamlit = ">=0.63"
+
+[[package]]
 name = "tenacity"
 version = "8.0.1"
 description = "Retry code until it succeeds"
@@ -1824,7 +1835,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "4084e7e0492a0c66f7df3bd0a009e9647248468313dafea8ebec6a9a9784b57f"
+content-hash = "618893a89c2db1400bdcad0e94c624b80eb6c34d533b23362878c393194a0ea7"
 
 [metadata.files]
 absl-py = [
@@ -2835,6 +2846,10 @@ sniffio = [
 streamlit = [
     {file = "streamlit-0.87.0-py2.py3-none-any.whl", hash = "sha256:1dbe55774f1ebd46c6a77d1fda53167774074e6400f320cc44b13ab8a3900647"},
     {file = "streamlit-0.87.0.tar.gz", hash = "sha256:7e63e3ac025717ff9c9a8c1903fa528ad0598b09b76705e54e2728a3d9d90aad"},
+]
+streamlit-tags = [
+    {file = "streamlit_tags-1.2.8-py3-none-any.whl", hash = "sha256:c71b10666f3fce67d8e0b3c089aa50dc48830d310223fb88005b08f157586f95"},
+    {file = "streamlit_tags-1.2.8.tar.gz", hash = "sha256:9ea46b21f206dc73164e59e3c800a96c863c90af57afde20115f001a6d986583"},
 ]
 tenacity = [
     {file = "tenacity-8.0.1-py3-none-any.whl", hash = "sha256:f78f4ea81b0fabc06728c11dc2a8c01277bfc5181b321a4770471902e3eb844a"},
