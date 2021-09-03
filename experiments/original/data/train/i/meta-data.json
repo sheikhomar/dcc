@@ -21,18 +21,17 @@
     {
       "full_path": "experiments/original/data/train/i/aba4001e-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
+      "new_label": "unsure",
       "tags": [
-        "artifacts",
-        "disconnected"
+        "disconnected",
+        "bent"
       ]
     },
     {
       "full_path": "experiments/original/data/train/i/aba4a622-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
+      "new_label": "unsure",
       "tags": [
-        "artifacts",
         "disconnected"
       ]
     },
@@ -216,10 +215,11 @@
     {
       "full_path": "experiments/original/data/train/i/abc2c5e4-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
+      "new_label": "unsure",
       "tags": [
         "disconnected",
-        "dots"
+        "dots",
+        "artifact-egde"
       ]
     },
     {
@@ -265,7 +265,7 @@
     {
       "full_path": "experiments/original/data/train/i/abc6b9f6-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
+      "new_label": "unsure",
       "tags": [
         "disconnected"
       ]
@@ -449,7 +449,8 @@
       "given_label": "i",
       "new_label": "i",
       "tags": [
-        "grid"
+        "grid",
+        "artifact-egde"
       ]
     },
     {
@@ -609,7 +610,8 @@
       "given_label": "i",
       "new_label": "i",
       "tags": [
-        "dots"
+        "dots",
+        "disconnected"
       ]
     },
     {
@@ -1419,7 +1421,9 @@
       "full_path": "experiments/original/data/train/i/ac45eb36-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "bent"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac46d0fa-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -1547,7 +1551,7 @@
     {
       "full_path": "experiments/original/data/train/i/ac4fe7b2-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
+      "new_label": "unsure",
       "tags": [
         "grid"
       ]
