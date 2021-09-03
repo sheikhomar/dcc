@@ -1,15 +1,33 @@
 {
   "images": [
     {
-      "full_path": "experiments/original/data/test/ii/a37502ee-ce5d-11eb-b317-38f9d35ea60f.png",
+      "full_path": "experiments/original/data/val/ii/b1343fe4-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b134e174-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b1357c24-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b13655cc-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "ii",
       "new_label": "ii",
       "tags": [
-        "creative"
+        "artifact-egde"
       ]
     },
     {
-      "full_path": "experiments/original/data/test/ii/a39e63f0-ce5d-11eb-b317-38f9d35ea60f.png",
+      "full_path": "experiments/original/data/val/ii/b1375ec2-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "ii",
       "new_label": "ii",
       "tags": [
@@ -17,7 +35,79 @@
       ]
     },
     {
-      "full_path": "experiments/original/data/test/ii/a3b8f1fc-ce5d-11eb-b317-38f9d35ea60f.png",
+      "full_path": "experiments/original/data/val/ii/b1380f52-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b138d2e8-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": [
+        "dots"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b139abaa-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "unsure",
+      "tags": [
+        "confusing"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b13a44fc-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": [
+        "artifacts"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b13b027a-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b13baf2c-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b13c3f78-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b13cf1de-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b13db89e-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b13e7b12-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b13f2f1c-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b13fda52-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "ii",
       "new_label": "ii",
       "tags": [
@@ -25,19 +115,415 @@
       ]
     },
     {
-      "full_path": "experiments/original/data/test/ii/a3e33dcc-ce5d-11eb-b317-38f9d35ea60f.png",
-      "given_label": "ii",
-      "new_label": "ii",
-      "tags": [
-        "dots",
-        "noise"
-      ]
-    },
-    {
-      "full_path": "experiments/original/data/test/ii/a3ef6ed0-ce5d-11eb-b317-38f9d35ea60f.png",
+      "full_path": "experiments/original/data/val/ii/b140b850-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "ii",
       "new_label": "ii",
       "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b14146f8-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b141dac8-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b14340de-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b143f70e-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b1448f7a-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "unsure",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b1456f62-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": [
+        "creative"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b1460fbc-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": [
+        "creative"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b146fb5c-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b1483d96-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": [
+        "creative",
+        "bent"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b148f740-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b149af64-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b14a96cc-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "unsure",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b14b5102-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "unsure",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b14bdd8e-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b14c6b82-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b14d19c4-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b14da380-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b14e4ea2-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": [
+        "dots"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b14f004a-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b14fd18c-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "unsure",
+      "tags": [
+        "confusing"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b15083fc-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b1511862-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b151b448-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b1528c06-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b1531f86-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "unsure",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b153b87e-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b1546eb8-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": [
+        "artifact-egde"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b1550f08-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b155dfd2-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b156ad9a-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b157b2a8-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b1587044-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b1590d9c-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b159b1de-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": [
+        "creative"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b15a3c44-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b15af2ec-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b15b8338-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": [
+        "noise",
+        "creative"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b15c829c-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b15d4984-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b15de25e-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b15eea28-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b15fc362-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b1605160-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": [
+        "disconnected"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b160f03e-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b161b9f6-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b1624ede-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b16325a2-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b163d8f8-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b16472d6-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b165481e-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b16642c8-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b1670fd2-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b167abfe-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b1685db0-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b1692d58-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b16a1c40-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b16ab574-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b16bae52-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": [
+        "artifacts",
+        "confusing"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b16c5622-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b16d87a4-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": [
+        "disconnected"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b16e4720-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b16ee8c4-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/val/ii/b16faed0-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ii",
+      "new_label": "ii",
+      "tags": [
+        "artifact-egde"
+      ]
     }
   ]
 }

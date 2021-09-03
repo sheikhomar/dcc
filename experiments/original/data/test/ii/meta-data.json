@@ -10,19 +10,25 @@
       "full_path": "experiments/original/data/test/ii/a39e63f0-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "ii",
       "new_label": "ii",
-      "tags": []
+      "tags": [
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/test/ii/a3b8f1fc-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "ii",
       "new_label": "ii",
-      "tags": []
+      "tags": [
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/test/ii/a3e33dcc-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "ii",
       "new_label": "ii",
-      "tags": []
+      "tags": [
+        "noise"
+      ]
     },
     {
       "full_path": "experiments/original/data/test/ii/a3ef6ed0-ce5d-11eb-b317-38f9d35ea60f.png",
