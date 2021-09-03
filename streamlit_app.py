@@ -266,9 +266,6 @@ class StreamlitApp:
     def _render_tags_container(self) -> None:
         possible_tags = self.possible_tags
         image_meta = self.current_image_meta
-
-        print(image_meta.tags)
-        print(f"Possible: \n{possible_tags}")
         
         st.markdown("## Tags")
         st.multiselect(
