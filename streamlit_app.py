@@ -442,10 +442,10 @@ class StreamlitApp:
         filtered_image_paths = []
         for image_path in tqdm(image_paths):
             img = cv2.imread(str(image_path), cv2.IMREAD_GRAYSCALE)
-            if np.mean(img) > 250 and np.std(img) < 20:
+            if np.mean(img) > 250 and np.std(img) < 30:
                 filtered_image_paths.append(image_path)
         self.filtered_image_paths = filtered_image_paths
         self.current_image_index = 1
-            
+
 
 StreamlitApp().run()
