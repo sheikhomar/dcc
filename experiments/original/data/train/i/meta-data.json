@@ -1206,13 +1206,17 @@
       "full_path": "experiments/original/data/train/i/ac34ca9a-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac355ed8-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac35f096-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -1224,7 +1228,10 @@
       "full_path": "experiments/original/data/train/i/ac367660-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "bent",
+        "creative"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac3706ac-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -1235,14 +1242,18 @@
     {
       "full_path": "experiments/original/data/train/i/ac379130-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac381614-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac389e68-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -1272,19 +1283,27 @@
       "full_path": "experiments/original/data/train/i/ac3ac346-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac3b3c90-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "grid",
+        "creative"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac3bca52-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "grid",
+        "creative"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac3c9504-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -1296,25 +1315,29 @@
       "full_path": "experiments/original/data/train/i/ac3d21fe-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "grid"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac3db31c-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
+      "new_label": "invalid",
       "tags": []
     },
     {
       "full_path": "experiments/original/data/train/i/ac3e7324-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
+      "new_label": "invalid",
       "tags": []
     },
     {
       "full_path": "experiments/original/data/train/i/ac3f2684-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "creative"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac3fac44-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -1344,31 +1367,41 @@
       "full_path": "experiments/original/data/train/i/ac41ef9a-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "grid",
+        "artifact-egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac426998-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "grid"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac42e6ac-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
+      "new_label": "unsure",
       "tags": []
     },
     {
       "full_path": "experiments/original/data/train/i/ac437428-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac442e68-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "dots",
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac44e0d8-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -1398,13 +1431,18 @@
       "full_path": "experiments/original/data/train/i/ac47750a-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "creative",
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac47f296-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac487dec-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -1416,13 +1454,18 @@
       "full_path": "experiments/original/data/train/i/ac4906e0-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac49a5be-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "grid",
+        "artifact-egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac4a36d2-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -1434,7 +1477,9 @@
       "full_path": "experiments/original/data/train/i/ac4ab3b4-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac4b5256-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -1452,7 +1497,10 @@
       "full_path": "experiments/original/data/train/i/ac4c5da4-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "artifact-egde",
+        "grid"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac4ce08a-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -1469,38 +1517,48 @@
     {
       "full_path": "experiments/original/data/train/i/ac4e20c6-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "creative"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac4e9d1c-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "grid"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac4f0d92-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
+      "new_label": "invalid",
       "tags": []
     },
     {
       "full_path": "experiments/original/data/train/i/ac4f76f6-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "creative"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac4fe7b2-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "grid"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac506f3e-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac50ef54-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -1511,14 +1569,19 @@
     {
       "full_path": "experiments/original/data/train/i/ac518220-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac520e66-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "grid",
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac5294c6-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -1530,13 +1593,18 @@
       "full_path": "experiments/original/data/train/i/ac537224-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac544c08-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "creative",
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac54f0cc-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -1553,14 +1621,17 @@
     {
       "full_path": "experiments/original/data/train/i/ac564e2c-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
+      "new_label": "unsure",
       "tags": []
     },
     {
       "full_path": "experiments/original/data/train/i/ac56d39c-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "bent",
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac5752e0-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -1572,48 +1643,60 @@
       "full_path": "experiments/original/data/train/i/ac57ea02-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "creative",
+        "bent"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac5886e2-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
+      "new_label": "unsure",
       "tags": []
     },
     {
       "full_path": "experiments/original/data/train/i/ac59140e-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac5981e6-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "dots",
+        "artifact-egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac59f5b8-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
+      "new_label": "invalid",
       "tags": []
     },
     {
       "full_path": "experiments/original/data/train/i/ac5aa0b2-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "creative"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac5b2c1c-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "creative"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac5baeb2-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
+      "new_label": "invalid",
       "tags": []
     },
     {
@@ -1638,7 +1721,10 @@
       "full_path": "experiments/original/data/train/i/ac5e0554-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "grid",
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac5e83c6-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -1649,20 +1735,24 @@
     {
       "full_path": "experiments/original/data/train/i/ac5f0530-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
+      "new_label": "unsure",
       "tags": []
     },
     {
       "full_path": "experiments/original/data/train/i/ac5fb084-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "creative"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac604594-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "grid"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac610844-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -1673,38 +1763,52 @@
     {
       "full_path": "experiments/original/data/train/i/ac618bca-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
+      "new_label": "invalid",
       "tags": []
     },
     {
       "full_path": "experiments/original/data/train/i/ac620d98-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac629fec-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac631fe4-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "grid",
+        "dots",
+        "artifact-egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac63c5e8-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "artifact-egde",
+        "dots",
+        "grid"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac64aa4e-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "creative"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac659a94-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -1728,13 +1832,17 @@
       "full_path": "experiments/original/data/train/i/ac69d604-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
       "new_label": "i",
-      "tags": []
+      "tags": [
+        "grid"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/i/ac6abe0c-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "disconnected"
+      ]
     }
   ]
 }
