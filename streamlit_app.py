@@ -153,6 +153,9 @@ class StreamlitApp:
         self._build_outlier_detector_dropbox()
         self._build_find_outliers_button()
 
+        st.sidebar.markdown("---\n## Other")
+        st.sidebar.button("Find blank images", on_click=lambda: self._find_blank_images())
+
     def _build_main_container(self) -> None:
         st.write("# Labeller")
         if "filtered_image_paths" not in st.session_state:
@@ -249,10 +252,12 @@ class StreamlitApp:
         image_path = self.current_image_path
         img = cv2.imread(str(image_path), cv2.IMREAD_GRAYSCALE)
         col1.image(img, use_column_width=False)
+        print(f"original mean: {np.mean(img):0.2f}, std: {np.std(img):0.2f}")
 
         new_size = (32,32)
         resized_img = load_image(str(image_path), image_size=new_size, num_channels=3, interpolation="bilinear")
         resized_img = cv2.cvtColor(resized_img.numpy(), cv2.COLOR_BGR2GRAY)
+        print(f"resized mean: {np.mean(resized_img):0.2f}, std: {np.std(resized_img):0.2f}")
         col1.image(resized_img, use_column_width=False, clamp=True, output_format="png")
 
         col1.text(image_path.name)
@@ -424,5 +429,23 @@ class StreamlitApp:
         self.filtered_image_paths = image_paths
         self.current_image_index = 1
 
+    def _find_blank_images(self) -> None:
+        source_experiment = st.session_state["source-experiment"]
+        class_name = st.session_state["class_name"]
+        dataset = self.dataset
+
+        data_dir = os.path.join(self._experiment_dir, source_experiment, "data", dataset, class_name)
+        image_paths = list(sorted(Path(data_dir).glob("**/*.png")))
+
+        self._load_or_create_meta_data_into_session(image_paths=image_paths)
+
+        filtered_image_paths = []
+        for image_path in tqdm(image_paths):
+            img = cv2.imread(str(image_path), cv2.IMREAD_GRAYSCALE)
+            if np.mean(img) > 250 and np.std(img) < 20:
+                filtered_image_paths.append(image_path)
+        self.filtered_image_paths = filtered_image_paths
+        self.current_image_index = 1
+            
 
 StreamlitApp().run()
