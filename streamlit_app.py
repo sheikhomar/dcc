@@ -143,6 +143,10 @@ class StreamlitApp:
         }
 
     def run(self):
+        self._build_sidebar()
+        self._build_main_container()
+
+    def _build_sidebar(self) -> None:
         st.sidebar.markdown("## Data Settings")
         self._build_source_experiment_dropbox()
         self._build_dataset_dropbox()
@@ -150,11 +154,9 @@ class StreamlitApp:
         self._build_show_images_button()
         
         st.sidebar.markdown("---\n## Outlier Detection Settings")
-        
         self._build_models_dropbox()
         self._build_outlier_detector_dropbox()
         self._build_find_outliers_button()
-        self._build_main_container()
 
     def _build_main_container(self) -> None:
         st.write("# Labeller")
