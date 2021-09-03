@@ -184,7 +184,8 @@ class StreamlitApp:
         if "possible_tags" not in st.session_state:
             file_path = os.path.join(self._experiment_dir, "possible-tags.txt")
             with open(file_path, "r") as file:
-                st.session_state["possible_tags"] = file.readlines()
+                possible_tags = [s.strip() for s in file.readlines() if len(s.strip()) > 1]
+                st.session_state["possible_tags"] = possible_tags
         return st.session_state["possible_tags"]
 
     @property
@@ -265,6 +266,9 @@ class StreamlitApp:
     def _render_tags_container(self) -> None:
         possible_tags = self.possible_tags
         image_meta = self.current_image_meta
+
+        print(image_meta.tags)
+        print(f"Possible: \n{possible_tags}")
         
         st.markdown("## Tags")
         st.multiselect(
@@ -279,8 +283,7 @@ class StreamlitApp:
             text='Press enter to add more',
             value=possible_tags,
             suggestions=[],
-            maxtags=-1,
-            key="possible_tags"
+            maxtags=-1
         )
 
     def _update_current_image_tags(self) -> None:
