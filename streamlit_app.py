@@ -143,32 +143,32 @@ class StreamlitApp:
         }
 
     def run(self):
+        st.sidebar.markdown("## Data Settings")
         self._build_source_experiment_dropbox()
-        self._build_outlier_detector_dropbox()
-        self._build_models_dropbox()
         self._build_dataset_dropbox()
         self._build_class_name_dropbox()
+        self._build_show_images_button()
+        
+        st.sidebar.markdown("---\n## Outlier Detection Settings")
+        
+        self._build_models_dropbox()
+        self._build_outlier_detector_dropbox()
         self._build_find_outliers_button()
         self._build_main_container()
 
     def _build_main_container(self) -> None:
-        st.write("# Bad Label Detector")
-        if "outlier_labels" not in st.session_state:
-            st.write("Please run outlier detection")
+        st.write("# Labeller")
+        if "filtered_image_paths" not in st.session_state:
+            st.write("Please select the images to label in the side bar.")
         else:
-            st.write(f"Found {self.n_outliers} outlier images")
-
+            st.write(f"Found {self.n_images} images")
             self._render_image_selectors()
             self._render_selected_image()
 
     @property
-    def n_outliers(self) -> int:
-        return int((self.outlier_labels == -1).sum())
+    def n_images(self) -> int:
+        return len(self.filtered_image_paths)
     
-    @property
-    def outlier_labels(self) -> np.ndarray:
-        return st.session_state["outlier_labels"]
-
     @property
     def class_name(self) -> np.ndarray:
         return st.session_state["class_name"]
@@ -184,7 +184,7 @@ class StreamlitApp:
     @property
     def current_image_path(self) -> Path:
         index = self.current_image_index - 1
-        image_path = self.bad_image_paths[index]
+        image_path = self.filtered_image_paths[index]
         return image_path
 
     @current_image_index.setter
@@ -192,12 +192,12 @@ class StreamlitApp:
         st.session_state["current_image_index"] = new_val
 
     @property
-    def bad_image_paths(self) -> np.ndarray:
-        return st.session_state["bad_image_paths"]
+    def filtered_image_paths(self) -> np.ndarray:
+        return st.session_state["filtered_image_paths"]
 
-    @bad_image_paths.setter
-    def bad_image_paths(self, new_val: np.ndarray) -> None:
-        st.session_state["bad_image_paths"] = new_val
+    @filtered_image_paths.setter
+    def filtered_image_paths(self, new_val: np.ndarray) -> None:
+        st.session_state["filtered_image_paths"] = new_val
 
     @property
     def meta_data_file_path(self) -> str:
@@ -214,7 +214,7 @@ class StreamlitApp:
 
     def _go_next_image(self) -> None:
         new_val = self.current_image_index + 1
-        max_val = self.n_outliers
+        max_val = self.n_images
         if new_val >= max_val:
             new_val = max_val
         self.current_image_index = new_val
@@ -228,7 +228,7 @@ class StreamlitApp:
     def _render_image_selectors(self) -> None:
         col1, col2, col3 = st.columns([0.1, 0.8, 0.1])
         col1.button("Prev", on_click=lambda: self._go_prev_image())
-        col2.slider('Current Image Index', min_value=1, max_value=self.n_outliers, key="current_image_index")
+        col2.slider('Current Image Index', min_value=1, max_value=self.n_images, key="current_image_index")
         col3.button("Next", on_click=lambda: self._go_next_image())
 
     def _render_selected_image(self) -> None:
@@ -310,7 +310,7 @@ class StreamlitApp:
         }
 
         st.sidebar.selectbox(
-            label='Source experiment',
+            label='Model',
             options=list(model_names.keys()),
             index=1,
             key="model_name"
@@ -367,9 +367,22 @@ class StreamlitApp:
         od_algo = self._outlier_detectors[outlier_detector][1]()
         outlier_labels = od_algo.fit_predict(feature_map_pca)
 
-        st.session_state["outlier_labels"] = outlier_labels
+        self.filtered_image_paths = np.array(image_paths)[(outlier_labels == -1)]
+        self.current_image_index = 1
 
-        self.bad_image_paths = np.array(image_paths)[(outlier_labels == -1)]
+    def _build_show_images_button(self) -> None:
+        st.sidebar.button("Show images", on_click=lambda: self._show_images())
+    
+    def _show_images(self) -> None:
+        source_experiment = st.session_state["source-experiment"]
+        class_name = st.session_state["class_name"]
+        dataset = self.dataset
+
+        data_dir = os.path.join(self._experiment_dir, source_experiment, "data", dataset, class_name)
+        image_paths = list(sorted(Path(data_dir).glob("**/*.png")))
+
+        self._load_or_create_meta_data_into_session(image_paths=image_paths)
+        self.filtered_image_paths = image_paths
         self.current_image_index = 1
 
 
