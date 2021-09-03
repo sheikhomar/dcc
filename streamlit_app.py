@@ -1,10 +1,12 @@
-import sys, os, re, base64
+import dataclasses
+import sys, os, json
 
 sys.path.append(os.path.abspath("../"))
 
+from dataclasses import dataclass
 from glob import glob
 from pathlib import Path
-from typing import List, Tuple
+from typing import List, Tuple, Dict
 
 import cv2
 import numpy as np
@@ -70,6 +72,67 @@ def get_feature_map(model: tf.keras.Model, image_paths: List[Path]) -> Tuple[Lis
     return feature_map
 
 
+@dataclass
+class MetaDataItem:
+    full_path: Path
+    given_label: str
+    new_label: str
+    tags: List[str]
+
+    def set_new_label(self, new_val: str) -> None:
+        self.new_label = new_val
+
+    def to_json(self) -> Dict[str, object]:
+        return {
+            "full_path": str(self.full_path),
+            "given_label": self.given_label,
+            "new_label": self.new_label,
+            "tags": self.tags
+        }
+    
+    @classmethod
+    def from_json(cls, input_dict: Dict[str, object]):
+        return cls(
+            full_path=Path(input_dict["full_path"]),
+            given_label=input_dict["given_label"],
+            new_label=input_dict["new_label"],
+            tags=input_dict["tags"],
+        )
+
+
+class MetaData:
+    def __init__(self) -> None:
+        self._items : Dict[str, MetaDataItem] = dict()
+
+    def add(self, item: MetaDataItem) -> None:
+        self._items[item.full_path.name] = item
+
+    def get(self, image_path: Path) -> MetaDataItem:
+        return self._items[image_path.name]
+
+    @classmethod
+    def from_csv(cls, file_path: Path):
+        if not os.path.exists(str(file_path)):
+            raise Exception(f"File not found: {file_path}")
+        with open(str(file_path), "r") as file:
+            meta_data_json = json.load(file)
+
+        meta_data = MetaData()
+        for v in meta_data_json["images"]:
+            meta_data.add(MetaDataItem.from_json(v))
+        return meta_data
+
+    def to_csv(self, file_path: Path):
+        image_list = []
+        for k, v in self._items.items():
+            image_list.append(v.to_json())
+        json_obj = {
+            "images": image_list
+        }
+        with open(file_path, "w") as file:
+            json.dump(json_obj, file, indent=2)
+
+
 class StreamlitApp:
     def __init__(self) -> None:
         self._experiment_dir = "experiments"
@@ -80,7 +143,6 @@ class StreamlitApp:
         }
 
     def run(self):
-        
         self._build_source_experiment_dropbox()
         self._build_outlier_detector_dropbox()
         self._build_models_dropbox()
@@ -95,7 +157,7 @@ class StreamlitApp:
             st.write("Please run outlier detection")
         else:
             st.write(f"Found {self.n_outliers} outlier images")
-            
+
             self._render_image_selectors()
             self._render_selected_image()
 
@@ -110,6 +172,10 @@ class StreamlitApp:
     @property
     def class_name(self) -> np.ndarray:
         return st.session_state["class_name"]
+
+    @property
+    def dataset(self) -> np.ndarray:
+        return st.session_state["dataset"]
 
     @property
     def current_image_index(self) -> int:
@@ -132,6 +198,19 @@ class StreamlitApp:
     @bad_image_paths.setter
     def bad_image_paths(self, new_val: np.ndarray) -> None:
         st.session_state["bad_image_paths"] = new_val
+
+    @property
+    def meta_data_file_path(self) -> str:
+        source_experiment = st.session_state["source-experiment"]
+        data_dir = os.path.join(self._experiment_dir, source_experiment, "data", self.dataset, self.class_name)
+        return os.path.join(data_dir, "meta-data.json")
+
+    @property
+    def meta_data(self) -> MetaData:
+        if "meta_data" not in st.session_state:
+            raise Exception("Meta data is not loaded.")
+        meta_data: MetaData = st.session_state["meta_data"]
+        return meta_data
 
     def _go_next_image(self) -> None:
         new_val = self.current_image_index + 1
@@ -177,28 +256,31 @@ class StreamlitApp:
         new_label = st.session_state["radio_val_selected_image_label"]
         self._set_current_image_label(new_label)
 
+    def _load_or_create_meta_data_into_session(self, image_paths: List[Path]) -> None:
+        file_path = self.meta_data_file_path
+        if os.path.exists(file_path):
+            meta_data: MetaData = MetaData.from_csv(file_path)
+        else:
+            meta_data = MetaData()
+            for path in image_paths:
+                item = MetaDataItem(
+                    full_path=path,
+                    given_label=path.parent.name,
+                    new_label=path.parent.name,
+                    tags=[]
+                )
+                meta_data.add(item)
+            meta_data.to_csv(file_path)
+        st.session_state["meta_data"] = meta_data
+
     def _get_current_image_label(self) -> str:
-        if "new_labels" not in st.session_state:
-            return self.class_name
-        key = self.current_image_path
-        if key in st.session_state["new_labels"]:
-            return st.session_state["new_labels"][key]
-        return self.class_name
+        return self.meta_data.get(self.current_image_path).new_label
     
     def _set_current_image_label(self, new_label: str) -> None:
-        old_label = self.class_name
-        if "new_labels" not in st.session_state:
-            new_labels_dict = dict()
-        else:
-            new_labels_dict = st.session_state["new_labels"]
-        
-        key = self.current_image_path
-        if old_label == new_label and key in new_labels_dict:
-            print(f"Removing item for {key}")
-            new_labels_dict.pop(key)
-        else:
-            new_labels_dict[key] = new_label
-        st.session_state["new_labels"] = new_labels_dict
+        meta_data = self.meta_data
+        item = meta_data.get(self.current_image_path)
+        item.set_new_label(new_label)
+        meta_data.to_csv(self.meta_data_file_path)
 
 
     def _build_source_experiment_dropbox(self) -> None:
@@ -254,12 +336,11 @@ class StreamlitApp:
         st.sidebar.button("Find outliers", on_click=lambda: self._on_find_outliers_button_click())
 
     def _on_find_outliers_button_click(self) -> None:
-        print("Button clicked!")
-
         source_experiment = st.session_state["source-experiment"]
         model_name = st.session_state["model_name"]
         class_name = st.session_state["class_name"]
         outlier_detector = st.session_state["outlier_detector"]
+        dataset = self.dataset
 
         if model_name == "imagenet":
             model_path = "imagenet"
@@ -271,10 +352,10 @@ class StreamlitApp:
         print(f"Loading model: {model_path}")
         model = get_feature_extractor(model_path)
 
-        data_dir = os.path.join(self._experiment_dir, source_experiment, "data", "train", class_name)
+        data_dir = os.path.join(self._experiment_dir, source_experiment, "data", dataset, class_name)
         image_paths = list(sorted(Path(data_dir).glob("**/*.png")))
 
-        st.session_state["image_paths"] = image_paths
+        self._load_or_create_meta_data_into_session(image_paths=image_paths)
 
         print("Computing feature map")
         feature_map = get_feature_map(model, image_paths)
@@ -290,7 +371,6 @@ class StreamlitApp:
 
         self.bad_image_paths = np.array(image_paths)[(outlier_labels == -1)]
         self.current_image_index = 1
-
 
 
 StreamlitApp().run()
