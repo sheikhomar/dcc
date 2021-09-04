@@ -84,7 +84,8 @@
       "given_label": "vii",
       "new_label": "unsure",
       "tags": [
-        "confusing"
+        "confusing",
+        "artifact-egde"
       ]
     },
     {
@@ -152,7 +153,8 @@
       "given_label": "vii",
       "new_label": "vii",
       "tags": [
-        "disconnected"
+        "disconnected",
+        "egde"
       ]
     },
     {
@@ -508,7 +510,9 @@
       "full_path": "experiments/original/data/val/vii/b1ed1fe6-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
       "new_label": "vii",
-      "tags": []
+      "tags": [
+        "creative"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/vii/b1edb7bc-ce5d-11eb-b317-38f9d35ea60f.png",
