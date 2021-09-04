@@ -21,16 +21,21 @@ def generate_splits(data_dir: Path, destination_dir: Path):
     for class_name in CLASS_NAMES:
         print(f"- Processing {class_name}")
         image_paths = list((data_dir / class_name).glob("*.png"))
-        train_paths, val_paths = train_test_split(image_paths, test_size=0.2)
-        print(f"   Train size: {len(train_paths)}, Validation size: {len(val_paths)}")
+        train_paths, val_paths = train_test_split(image_paths, test_size=0.2, random_state=492)
+        set_paths = {"train": train_paths, "val": val_paths}
+        for set_name, paths in set_paths.items():
+            for src_path in paths:
+                dest_path = destination_dir / set_name / src_path.parent.name / src_path.name
+                dest_path.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy(src=src_path, dst=dest_path)
 
 
 def copy_cleaned(source_experiment_dir: str, target_experiment_dir: str):
     source_dir = Path(source_experiment_dir)
     target_dir = Path(target_experiment_dir)
 
-    print(f"Remove directory: {target_dir}")
-    shutil.rmtree(target_dir)
+    if target_dir.exists():
+        raise Exception(f"Target directory {target_dir} exists. Please remove it.")
 
     print("Copying files...")
     for class_name in CLASS_NAMES:
