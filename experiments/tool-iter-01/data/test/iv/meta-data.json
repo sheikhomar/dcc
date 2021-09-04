@@ -1,0 +1,41 @@
+{
+  "images": [
+    {
+      "full_path": "experiments/original/data/test/iv/a6c4469e-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "iv",
+      "new_label": "iv",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/test/iv/a6d9760e-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "iv",
+      "new_label": "iv",
+      "tags": [
+        "grid",
+        "egde"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/test/iv/a6f8c07c-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "iv",
+      "new_label": "iv",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/test/iv/a70f5af8-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "iv",
+      "new_label": "iv",
+      "tags": [
+        "multiline"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/test/iv/a7183a10-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "iv",
+      "new_label": "iv",
+      "tags": [
+        "disconnected"
+      ]
+    }
+  ]
+}

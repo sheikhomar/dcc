@@ -1,0 +1,40 @@
+{
+  "images": [
+    {
+      "full_path": "experiments/original/data/test/v/a88a741c-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "v",
+      "new_label": "v",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/test/v/a8a5dcc0-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "v",
+      "new_label": "v",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/test/v/a8d56ac6-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "v",
+      "new_label": "v",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/test/v/a8e27400-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "v",
+      "new_label": "v",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/test/v/a8e3ef7e-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "v",
+      "new_label": "v",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/test/v/a91952ea-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "v",
+      "new_label": "v",
+      "tags": []
+    }
+  ]
+}

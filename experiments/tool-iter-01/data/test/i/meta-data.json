@@ -1,0 +1,39 @@
+{
+  "images": [
+    {
+      "full_path": "experiments/original/data/test/i/a4b1d326-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "i",
+      "new_label": "i",
+      "tags": [
+        "grid",
+        "dots"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/test/i/a4bc3fdc-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "i",
+      "new_label": "i",
+      "tags": [
+        "creative"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/test/i/a4c6f9c2-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "i",
+      "new_label": "i",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/test/i/a4d082ee-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "i",
+      "new_label": "i",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/test/i/a4ec97cc-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "i",
+      "new_label": "i",
+      "tags": []
+    }
+  ]
+}
