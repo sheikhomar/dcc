@@ -1,0 +1,34 @@
+{
+  "images": [
+    {
+      "full_path": "experiments/original/data/test/x/a97df060-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "x",
+      "new_label": "x",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/test/x/a9a4255a-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "x",
+      "new_label": "x",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/test/x/a9b14348-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "x",
+      "new_label": "x",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/test/x/a9d6228a-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "x",
+      "new_label": "x",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/test/x/a9e4f63e-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "x",
+      "new_label": "x",
+      "tags": []
+    }
+  ]
+}
