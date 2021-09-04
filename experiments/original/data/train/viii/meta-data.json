@@ -22,7 +22,9 @@
       "full_path": "experiments/original/data/train/viii/ad0883bc-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "artifacts"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad0938ca-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -43,7 +45,9 @@
       "full_path": "experiments/original/data/train/viii/ad0b02e0-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "artifacts"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad0bb88e-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -78,8 +82,10 @@
     {
       "full_path": "experiments/original/data/train/viii/ad0fcdfc-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
-      "new_label": "viii",
-      "tags": []
+      "new_label": "invalid",
+      "tags": [
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad105f2e-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -92,8 +98,11 @@
     {
       "full_path": "experiments/original/data/train/viii/ad10efac-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
-      "new_label": "viii",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "egde",
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad12aa54-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -111,7 +120,9 @@
       "full_path": "experiments/original/data/train/viii/ad145f8e-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "artifacts"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad150682-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -128,8 +139,10 @@
     {
       "full_path": "experiments/original/data/train/viii/ad1641f0-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
-      "new_label": "viii",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad181de0-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -147,7 +160,9 @@
       "full_path": "experiments/original/data/train/viii/ad19788e-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad1a0948-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -158,14 +173,16 @@
     {
       "full_path": "experiments/original/data/train/viii/ad1a9a16-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
-      "new_label": "viii",
+      "new_label": "invalid",
       "tags": []
     },
     {
       "full_path": "experiments/original/data/train/viii/ad1b3214-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad1cf996-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -183,7 +200,9 @@
       "full_path": "experiments/original/data/train/viii/ad20460a-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "artifact-egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad217606-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -200,8 +219,10 @@
     {
       "full_path": "experiments/original/data/train/viii/ad2585ca-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
-      "new_label": "viii",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "artifact-egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad266fda-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -219,7 +240,9 @@
       "full_path": "experiments/original/data/train/viii/ad295268-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "creative"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad2a0654-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -231,7 +254,10 @@
       "full_path": "experiments/original/data/train/viii/ad2b2b10-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "confusing",
+        "artifacts"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad2f16a8-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -242,14 +268,18 @@
     {
       "full_path": "experiments/original/data/train/viii/ad304a78-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
-      "new_label": "viii",
-      "tags": []
+      "new_label": "iii",
+      "tags": [
+        "artifact-egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad319acc-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "artifact-egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad32ae94-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -261,14 +291,18 @@
       "full_path": "experiments/original/data/train/viii/ad33d800-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "grid",
+        "creative",
+        "artifact-egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad347ddc-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
       "tags": [
-        "grid"
+        "artifact-egde"
       ]
     },
     {
@@ -341,7 +375,9 @@
       "full_path": "experiments/original/data/train/viii/ad42a984-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "artifact-egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad43837c-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -359,18 +395,22 @@
       "full_path": "experiments/original/data/train/viii/ad465570-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "artifact-egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad471abe-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad47d044-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
-      "new_label": "viii",
+      "new_label": "unsure",
       "tags": []
     },
     {
@@ -403,7 +443,9 @@
       "full_path": "experiments/original/data/train/viii/ad4d5974-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "artifact-egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad4e1918-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -414,8 +456,10 @@
     {
       "full_path": "experiments/original/data/train/viii/ad4eb472-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
-      "new_label": "viii",
-      "tags": []
+      "new_label": "iii",
+      "tags": [
+        "bent"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad521464-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -457,13 +501,19 @@
       "full_path": "experiments/original/data/train/viii/ad584320-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "artifact-egde",
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad593a82-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "creative",
+        "bent"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad5c2314-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -509,7 +559,10 @@
       "full_path": "experiments/original/data/train/viii/ad6bb1c6-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "confusing",
+        "artifacts"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad6c401e-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -526,8 +579,10 @@
     {
       "full_path": "experiments/original/data/train/viii/ad6def90-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
-      "new_label": "viii",
-      "tags": []
+      "new_label": "invalid",
+      "tags": [
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad6e936e-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -544,8 +599,10 @@
     {
       "full_path": "experiments/original/data/train/viii/ad7040e2-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
-      "new_label": "viii",
-      "tags": []
+      "new_label": "invalid",
+      "tags": [
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad711058-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -604,8 +661,10 @@
     {
       "full_path": "experiments/original/data/train/viii/ad77dad2-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
-      "new_label": "viii",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "artifacts"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad787fd2-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -666,7 +725,8 @@
       "given_label": "viii",
       "new_label": "viii",
       "tags": [
-        "egde"
+        "egde",
+        "artifact-egde"
       ]
     },
     {
@@ -685,7 +745,9 @@
       "full_path": "experiments/original/data/train/viii/ad817fce-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "artifacts"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad84d16a-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -697,19 +759,23 @@
       "full_path": "experiments/original/data/train/viii/ad85aae0-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "creative"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad88b226-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
-      "new_label": "viii",
+      "new_label": "unsure",
       "tags": []
     },
     {
       "full_path": "experiments/original/data/train/viii/ad8a18fa-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad8b966c-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -739,7 +805,10 @@
       "full_path": "experiments/original/data/train/viii/ad8fe24e-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "artifacts",
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad91189e-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -751,7 +820,9 @@
       "full_path": "experiments/original/data/train/viii/ad91e33c-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad92aa10-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -808,7 +879,8 @@
       "given_label": "viii",
       "new_label": "ii",
       "tags": [
-        "bent"
+        "bent",
+        "artifact-egde"
       ]
     },
     {
@@ -839,7 +911,9 @@
       "full_path": "experiments/original/data/train/viii/ad9dc4b8-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ad9e7c3c-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -852,7 +926,8 @@
       "given_label": "viii",
       "new_label": "viii",
       "tags": [
-        "egde"
+        "egde",
+        "disconnected"
       ]
     },
     {
@@ -864,8 +939,13 @@
     {
       "full_path": "experiments/original/data/train/viii/ada1001a-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
-      "new_label": "viii",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "egde",
+        "artifact-egde",
+        "confusing",
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ada1932c-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -877,19 +957,25 @@
       "full_path": "experiments/original/data/train/viii/ada2df16-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "artifact-egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ada3dc5e-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "artifacts"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/ada6a330-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "creative"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/adab08c6-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -907,9 +993,7 @@
       "full_path": "experiments/original/data/train/viii/adaca514-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "unsure",
-      "tags": [
-        "confusing"
-      ]
+      "tags": []
     },
     {
       "full_path": "experiments/original/data/train/viii/adada8e2-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -928,13 +1012,16 @@
     {
       "full_path": "experiments/original/data/train/viii/adaed474-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
-      "new_label": "viii",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "egde",
+        "artifact-egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/adb07b4e-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
-      "new_label": "viii",
+      "new_label": "invalid",
       "tags": []
     },
     {
@@ -946,8 +1033,11 @@
     {
       "full_path": "experiments/original/data/train/viii/adb27eb2-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
-      "new_label": "viii",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "artifacts",
+        "artifact-egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/adb34b94-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -977,7 +1067,10 @@
       "full_path": "experiments/original/data/train/viii/adb7875e-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "dots",
+        "artifact-egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/adb83398-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -997,13 +1090,17 @@
       "full_path": "experiments/original/data/train/viii/adb9c208-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/adbb1946-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
-      "new_label": "viii",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/adbc7d54-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -1078,7 +1175,7 @@
     {
       "full_path": "experiments/original/data/train/viii/adc4777a-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
-      "new_label": "viii",
+      "new_label": "invalid",
       "tags": []
     },
     {
@@ -1091,7 +1188,9 @@
       "full_path": "experiments/original/data/train/viii/adc5a596-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/adc63916-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -1109,7 +1208,9 @@
       "full_path": "experiments/original/data/train/viii/adc74676-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/adc7c952-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -1132,8 +1233,12 @@
     {
       "full_path": "experiments/original/data/train/viii/adc9d4cc-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
-      "new_label": "viii",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "egde",
+        "artifact-egde",
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/adca693c-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -1145,7 +1250,9 @@
       "full_path": "experiments/original/data/train/viii/adcb4bb8-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "artifacts"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/adcbf130-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -1184,7 +1291,8 @@
       "given_label": "viii",
       "new_label": "viii",
       "tags": [
-        "grid"
+        "grid",
+        "egde"
       ]
     },
     {
@@ -1197,7 +1305,9 @@
       "full_path": "experiments/original/data/train/viii/add26b8c-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/add3079a-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -1214,28 +1324,35 @@
     {
       "full_path": "experiments/original/data/train/viii/add4565e-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
-      "new_label": "viii",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/add4f03c-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "unsure",
       "tags": [
-        "confusing"
+        "confusing",
+        "disconnected"
       ]
     },
     {
       "full_path": "experiments/original/data/train/viii/add597bc-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "bent"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/viii/add65990-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "viii",
       "new_label": "viii",
-      "tags": []
+      "tags": [
+        "artifact-egde"
+      ]
     }
   ]
 }
