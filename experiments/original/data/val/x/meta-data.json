@@ -21,8 +21,10 @@
     {
       "full_path": "experiments/original/data/val/x/b2f23b9c-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "x",
-      "new_label": "x",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/x/b2f3566c-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -40,7 +42,9 @@
       "full_path": "experiments/original/data/val/x/b2f49e00-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "x",
       "new_label": "x",
-      "tags": []
+      "tags": [
+        "creative"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/x/b2f5fbba-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -142,7 +146,9 @@
       "full_path": "experiments/original/data/val/x/b3028ccc-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "x",
       "new_label": "x",
-      "tags": []
+      "tags": [
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/x/b3036160-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -160,7 +166,10 @@
       "full_path": "experiments/original/data/val/x/b304a6f6-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "x",
       "new_label": "x",
-      "tags": []
+      "tags": [
+        "artifact-egde",
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/x/b30568ac-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -208,13 +217,17 @@
       "full_path": "experiments/original/data/val/x/b30b2cb0-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "x",
       "new_label": "x",
-      "tags": []
+      "tags": [
+        "artifact-egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/x/b30bc4ae-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "x",
-      "new_label": "x",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/x/b30dab7a-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -226,7 +239,9 @@
       "full_path": "experiments/original/data/val/x/b310285a-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "x",
       "new_label": "x",
-      "tags": []
+      "tags": [
+        "artifacts"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/x/b311cee4-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -244,7 +259,9 @@
       "full_path": "experiments/original/data/val/x/b315c5bc-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "x",
       "new_label": "x",
-      "tags": []
+      "tags": [
+        "artifacts"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/x/b316b346-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -280,7 +297,9 @@
       "full_path": "experiments/original/data/val/x/b31c3cd0-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "x",
       "new_label": "x",
-      "tags": []
+      "tags": [
+        "egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/x/b31cd1e0-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -292,13 +311,17 @@
       "full_path": "experiments/original/data/val/x/b31d69b6-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "x",
       "new_label": "x",
-      "tags": []
+      "tags": [
+        "artifacts"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/x/b31ef10a-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "x",
       "new_label": "x",
-      "tags": []
+      "tags": [
+        "artifacts"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/x/b31fc666-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -328,7 +351,9 @@
       "full_path": "experiments/original/data/val/x/b32314a6-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "x",
       "new_label": "x",
-      "tags": []
+      "tags": [
+        "artifacts"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/x/b324670c-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -340,7 +365,9 @@
       "full_path": "experiments/original/data/val/x/b32511a2-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "x",
       "new_label": "x",
-      "tags": []
+      "tags": [
+        "creative"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/x/b3260fbc-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -478,7 +505,9 @@
       "full_path": "experiments/original/data/val/x/b33b81e4-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "x",
       "new_label": "x",
-      "tags": []
+      "tags": [
+        "artifacts"
+      ]
     },
     {
       "full_path": "experiments/original/data/val/x/b33c36ac-ce5d-11eb-b317-38f9d35ea60f.png",
