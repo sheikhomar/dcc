@@ -23,7 +23,7 @@ from sklearn.cluster import DBSCAN
 from sklearn.decomposition import PCA
 from streamlit_tags import st_tags, st_tags_sidebar
 
-from utils import MetaData, MetaDataItem, CLASS_NAMES
+from utils import MetaData, MetaDataItem, CLASS_NAMES, get_feature_extractor, get_feature_map
 
 class StreamlitApp:
     def __init__(self) -> None:
