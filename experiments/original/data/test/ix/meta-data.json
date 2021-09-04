@@ -1,0 +1,44 @@
+{
+  "images": [
+    {
+      "full_path": "experiments/original/data/test/ix/a7967416-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ix",
+      "new_label": "ix",
+      "tags": [
+        "disconnected"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/test/ix/a7ad6766-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ix",
+      "new_label": "ix",
+      "tags": []
+    },
+    {
+      "full_path": "experiments/original/data/test/ix/a7ae10bc-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ix",
+      "new_label": "ix",
+      "tags": [
+        "confusing",
+        "artifact-egde"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/test/ix/a7dae376-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ix",
+      "new_label": "ix",
+      "tags": [
+        "creative",
+        "artifacts"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/test/ix/a821f1a8-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "ix",
+      "new_label": "ix",
+      "tags": [
+        "creative"
+      ]
+    }
+  ]
+}
