@@ -1,0 +1,42 @@
+{
+  "images": [
+    {
+      "full_path": "experiments/original/data/test/viii/a5e9e2ec-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "viii",
+      "new_label": "viii",
+      "tags": [
+        "confusing"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/test/viii/a624afee-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "viii",
+      "new_label": "viii",
+      "tags": [
+        "egde"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/test/viii/a626842c-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "viii",
+      "new_label": "viii",
+      "tags": [
+        "artifact-egde"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/test/viii/a64e3d3c-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "viii",
+      "new_label": "viii",
+      "tags": [
+        "creative"
+      ]
+    },
+    {
+      "full_path": "experiments/original/data/test/viii/a65c274e-ce5d-11eb-b317-38f9d35ea60f.png",
+      "given_label": "viii",
+      "new_label": "viii",
+      "tags": []
+    }
+  ]
+}
