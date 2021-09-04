@@ -276,12 +276,12 @@ class StreamlitApp:
     def _render_tags_container(self) -> None:
         possible_tags = self.possible_tags
         image_meta = self.current_image_meta
-        
+        st.session_state["selected_tags"] = image_meta.tags
         st.markdown("## Tags")
         st.multiselect(
             label="Assignments for current image",
             options=possible_tags,
-            default=image_meta.tags,
+            default=[],
             key="selected_tags",
             on_change=lambda: self._update_current_image_tags()
         )
