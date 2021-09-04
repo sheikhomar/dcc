@@ -115,6 +115,9 @@ class MetaData:
     def get(self, image_path: Path) -> MetaDataItem:
         return self._items[image_path.name]
 
+    def get_all(self) -> List[MetaDataItem]:
+        return list(self._items.values())
+
     @classmethod
     def from_csv(cls, file_path: Path):
         if not os.path.exists(str(file_path)):
