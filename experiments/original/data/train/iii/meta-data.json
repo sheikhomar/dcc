@@ -296,7 +296,7 @@
     {
       "full_path": "experiments/original/data/train/iii/b0492432-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "iii",
-      "new_label": "iii",
+      "new_label": "invalid",
       "tags": []
     },
     {

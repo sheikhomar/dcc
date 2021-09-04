@@ -192,7 +192,7 @@
     {
       "full_path": "experiments/original/data/train/vi/aac4401e-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vi",
-      "new_label": "unsure",
+      "new_label": "v",
       "tags": [
         "disconnected"
       ]

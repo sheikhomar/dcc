@@ -249,7 +249,7 @@
     {
       "full_path": "experiments/original/data/train/i/abc5a782-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
+      "new_label": "invalid",
       "tags": [
         "disconnected"
       ]
@@ -377,7 +377,7 @@
     {
       "full_path": "experiments/original/data/train/i/abe0bb6c-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
+      "new_label": "invalid",
       "tags": [
         "disconnected"
       ]
@@ -1067,7 +1067,7 @@
     {
       "full_path": "experiments/original/data/train/i/ac27f36a-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "i",
-      "new_label": "i",
+      "new_label": "invalid",
       "tags": [
         "disconnected"
       ]
