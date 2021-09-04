@@ -14,7 +14,7 @@ batch_size = 8
 tf.random.set_seed(123)
 
 
-def train(experiment_dir: str):
+def train(experiment_dir: str, epochs: int):
     train_set = tf.keras.preprocessing.image_dataset_from_directory(
         os.path.join(experiment_dir, 'data', 'train'),
         labels="inferred",
@@ -98,7 +98,7 @@ def train(experiment_dir: str):
     history = model.fit(
         train_set,
         validation_data=valid,
-        epochs=100,
+        epochs=epochs,
         callbacks=[checkpoint],
     )
 
@@ -127,9 +127,18 @@ def train(experiment_dir: str):
     required=True,
     help="Path to the experiment."
 )
-def main(experiment_dir: str):
+@click.option(
+    "-i",
+    "--epochs",
+    type=click.INT,
+    default=100,
+    required=False,
+    help="Number of epochs to fine-tune the model."
+)
+def main(experiment_dir: str, epochs: int):
     train(
         experiment_dir=experiment_dir,
+        epochs=epochs,
     )
 
 
