@@ -16,13 +16,17 @@
       "full_path": "experiments/original/data/train/vii/ac70458e-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
       "new_label": "vii",
-      "tags": []
+      "tags": [
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac70cacc-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
       "new_label": "vii",
-      "tags": []
+      "tags": [
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac71708a-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -34,25 +38,33 @@
       "full_path": "experiments/original/data/train/vii/ac72061c-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
       "new_label": "vii",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac72a7b6-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
       "new_label": "vii",
-      "tags": []
+      "tags": [
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac7357b0-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
       "new_label": "vii",
-      "tags": []
+      "tags": [
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac740192-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
-      "new_label": "vii",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac74c53c-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -94,31 +106,41 @@
       "full_path": "experiments/original/data/train/vii/ac77d9a2-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
       "new_label": "vii",
-      "tags": []
+      "tags": [
+        "creative"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac785d82-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
-      "new_label": "vii",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac7924b0-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
-      "new_label": "vii",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac79b650-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
       "new_label": "vii",
-      "tags": []
+      "tags": [
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac7a35c6-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
-      "new_label": "vii",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "noise"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac7b0ed8-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -135,8 +157,12 @@
     {
       "full_path": "experiments/original/data/train/vii/ac7c5bd0-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
-      "new_label": "vii",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "confusing",
+        "artifacts",
+        "egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac7cda7e-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -154,7 +180,9 @@
       "full_path": "experiments/original/data/train/vii/ac7dd032-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
       "new_label": "vii",
-      "tags": []
+      "tags": [
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac7e7730-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -166,31 +194,43 @@
       "full_path": "experiments/original/data/train/vii/ac7ef430-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
       "new_label": "vii",
-      "tags": []
+      "tags": [
+        "noise",
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac7f7a90-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
       "new_label": "vii",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac7ff3e4-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
       "new_label": "vii",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac8075f8-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
       "new_label": "vii",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac810e14-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
       "new_label": "vii",
-      "tags": []
+      "tags": [
+        "dots",
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac81999c-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -201,14 +241,17 @@
     {
       "full_path": "experiments/original/data/train/vii/ac8226aa-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
-      "new_label": "vii",
+      "new_label": "unsure",
       "tags": []
     },
     {
       "full_path": "experiments/original/data/train/vii/ac82a760-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
       "new_label": "vii",
-      "tags": []
+      "tags": [
+        "noise",
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac83575a-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -219,8 +262,10 @@
     {
       "full_path": "experiments/original/data/train/vii/ac8415d2-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
-      "new_label": "vii",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac849a5c-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -238,7 +283,9 @@
       "full_path": "experiments/original/data/train/vii/ac85aa5a-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
       "new_label": "vii",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac8638f8-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -250,13 +297,17 @@
       "full_path": "experiments/original/data/train/vii/ac86bb34-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
       "new_label": "vii",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac873212-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
       "new_label": "vii",
-      "tags": []
+      "tags": [
+        "creative"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac87a85a-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -285,14 +336,19 @@
     {
       "full_path": "experiments/original/data/train/vii/ac8a09d8-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
-      "new_label": "vii",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "confusing",
+        "noise"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac8ab400-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
       "new_label": "vii",
-      "tags": []
+      "tags": [
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac8b7b38-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -309,13 +365,15 @@
     {
       "full_path": "experiments/original/data/train/vii/ac8c77c2-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
-      "new_label": "vii",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac8ceffe-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
-      "new_label": "vii",
+      "new_label": "invalid",
       "tags": []
     },
     {
@@ -328,7 +386,9 @@
       "full_path": "experiments/original/data/train/vii/ac8e2536-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
       "new_label": "vii",
-      "tags": []
+      "tags": [
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac8ebc94-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -352,13 +412,19 @@
       "full_path": "experiments/original/data/train/vii/ac905e50-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
       "new_label": "vii",
-      "tags": []
+      "tags": [
+        "egde",
+        "artifact-egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac90e212-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
       "new_label": "vii",
-      "tags": []
+      "tags": [
+        "artifact-egde",
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac917db2-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -376,13 +442,17 @@
       "full_path": "experiments/original/data/train/vii/ac92a520-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
       "new_label": "vii",
-      "tags": []
+      "tags": [
+        "artifact-egde"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac934764-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
       "new_label": "vii",
-      "tags": []
+      "tags": [
+        "disconnected"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac964860-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -393,8 +463,10 @@
     {
       "full_path": "experiments/original/data/train/vii/ac97e86e-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
-      "new_label": "vii",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac98944e-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -406,7 +478,10 @@
       "full_path": "experiments/original/data/train/vii/ac993098-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
       "new_label": "vii",
-      "tags": []
+      "tags": [
+        "egde",
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac9a1b20-ce5d-11eb-b317-38f9d35ea60f.png",
@@ -417,14 +492,18 @@
     {
       "full_path": "experiments/original/data/train/vii/ac9ac6e2-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
-      "new_label": "vii",
-      "tags": []
+      "new_label": "unsure",
+      "tags": [
+        "confusing"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac9b441e-ce5d-11eb-b317-38f9d35ea60f.png",
       "given_label": "vii",
       "new_label": "vii",
-      "tags": []
+      "tags": [
+        "dots"
+      ]
     },
     {
       "full_path": "experiments/original/data/train/vii/ac9bb8b8-ce5d-11eb-b317-38f9d35ea60f.png",
