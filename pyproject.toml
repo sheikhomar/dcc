@@ -21,6 +21,7 @@ jupyter-dash = "^0.4.0"
 streamlit = "^0.87.0"
 streamlit-tags = "^1.2.8"
 ImageHash = "^4.2.1"
+imgaug = "^0.4.0"
 
 [tool.poetry.dev-dependencies]
 
